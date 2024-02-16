@@ -1,0 +1,57 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100%;
+	font-family: sans-serif;
+}
+
+.container {
+	border: 2px solid black;
+	border-radius: 4px;
+	width: 50%;
+}
+
+.container:focus-within {
+	border-color: blue;
+}
+
+input,
+input:focus {
+	border: none;
+	outline: none;
+}
+
+input {
+	padding: 0.4rem;
+	font-size: 1.2rem;
+	width: 100%;
+}
+
+.tagList {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.tag {
+	margin: 4px;
+	background-color: #999999;
+	padding: 4px 8px;
+	border-radius: 3px;
+	max-width: 98%;
+}
+
+.tag > span {
+	word-break: break-all;
+}
+
+.tag > button {
+	all: unset;
+	margin-left: 6px;
+	color: lightyellow;
+	cursor: pointer;
+}
